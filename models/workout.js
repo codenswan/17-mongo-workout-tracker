@@ -8,12 +8,24 @@ let workoutSchema = new Schema({
   },
   excercises: [
     {
-      type: String,
-      name: String,
-      duration: Number,
-      weight: Number,
-      reps: Number,
-      sets: Number,
+      type: {
+        type: String,
+        trim: true,
+        required: "Enter the type of exercise.",
+      },
+      name: {
+        type: String,
+        trim: true,
+        required: "Enter the name of the exercise.",
+      },
+      duration: {
+        type: Number,
+        required: "Enter the length of your workout.",
+      },
+      distance: {type: Number},
+      weight: { type: Number },
+      reps: { type: Number },
+      sets: { type: Number },
     },
   ],
 });
