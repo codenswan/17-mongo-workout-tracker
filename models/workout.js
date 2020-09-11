@@ -2,7 +2,10 @@ let mongoose = require("mongoose");
 let Schema = mongoose.Schema;
 
 let workoutSchema = new Schema({
-  day: { type: Date, default: Date.now },
+  day: {
+    type: Date,
+    default: Date.now,
+  },
   excercises: [
     {
       type: String,
