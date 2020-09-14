@@ -30,6 +30,12 @@ As a user, I want to be able to view create and track daily workouts. I want to 
 Here is the landing page:
 ![](public/images/Screen%20Shot%202020-09-14%20at%205.22.45%20pm.png)
 
+The user either continues adding exercises to an existing workout or starts are new one. This is the screen for adding a new resistence workout:
+![](public/images/Screen%20Shot%202020-09-14%20at%205.23.46%20pm.png)
+
+And this form for adding a cardio.
+![](public/images/Screen%20Shot%202020-09-14%20at%205.23.35%20pm.png)
+
 ## Dependencies:
 * compression: 1.7.4
 * express: 4.16.3
