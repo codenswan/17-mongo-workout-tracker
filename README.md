@@ -37,7 +37,7 @@ The user either continues adding exercises to an existing workout or starts are 
 
 This is the stats page:
 
-<img src= "public/images/Screen%20Shot%202020-09-14%20at%205.54.13%20pm.png" width="600/>
+<img src= "public/images/Screen%20Shot%202020-09-14%20at%205.54.13%20pm.png" width="600"/>
 
 ## Dependencies:
 * compression: 1.7.4
