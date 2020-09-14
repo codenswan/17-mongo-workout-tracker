@@ -28,8 +28,7 @@ Then run in terminal
 As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
 
 Here is the landing page:
-![](public/images/Screen%20Shot%202020-09-14%20at%205.22.45%20pm.png)
-<img src="public/images/Screen%20Shot%202020-09-14%20at%205.22.45%20pm.png" width="100" height="100"/>
+<img src="public/images/Screen%20Shot%202020-09-14%20at%205.22.45%20pm.png" width="450"/>
 
 The user either continues adding exercises to an existing workout or starts are new one. This is the screen for adding a new resistence workout:
 ![](public/images/Screen%20Shot%202020-09-14%20at%205.23.46%20pm.png)
