@@ -27,7 +27,8 @@ Then run in terminal
 ## Usage:
 As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
 
-
+Here is the landing page:
+![](public/images/Screen%20Shot%202020-09-14%20at%205.22.45%20pm.png)
 
 ## Dependencies:
 * compression: 1.7.4
