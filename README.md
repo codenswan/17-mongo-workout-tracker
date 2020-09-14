@@ -32,10 +32,12 @@ Here is the landing page:
 <img src="public/images/Screen%20Shot%202020-09-14%20at%205.22.45%20pm.png" width="650"/>
 
 The user either continues adding exercises to an existing workout or starts are new one. This is the screen for adding a new resistence workout:
+
 ![](public/images/Screen%20Shot%202020-09-14%20at%205.23.46%20pm.png)
 
-And this form for adding a cardio.
-![](public/images/Screen%20Shot%202020-09-14%20at%205.23.35%20pm.png)
+This is the stats page:
+
+<img src= "public/images/Screen%20Shot%202020-09-14%20at%205.54.13%20pm.png" width="600/>
 
 ## Dependencies:
 * compression: 1.7.4
