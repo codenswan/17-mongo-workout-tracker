@@ -26,7 +26,7 @@ router.get("/workouts/last", async (req, res) => {
       const lastWorkout = (await db.Workout.find().sort([ ['day', -1] ])) [0];
       res.status(200).json(lastWorkout)
     } catch (error) {
-      console.log(error);
+      res.status(500).json({ message: err.message });
     }
   })
 
