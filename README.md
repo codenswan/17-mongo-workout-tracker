@@ -33,7 +33,7 @@ Here is the landing page:
 
 The user either continues adding exercises to an existing workout or starts are new one. This is the screen for adding a new resistence workout:
 
-![](public/images/Screen%20Shot%202020-09-14%20at%205.23.46%20pm.png)
+<img src"public/images/Screen%20Shot%202020-09-14%20at%205.23.46%20pm.png" width="450"/>
 
 This is the stats page:
 
