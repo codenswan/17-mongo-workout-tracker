@@ -1,37 +1,53 @@
 const db = require("../models");
 const router = require("express").Router();
 
-router.get("/exercise", (req, res) => {
-  console.log(req.query.body);
-  res.sendFile(path.join(__dirname + "./../public/exercise.html"));
+//*router for all /api/workouts routes
+router
+  .route("/workouts")
+  .get(async (req, res) => {
+    try {
+      const dbWorkouts = await db.Workout.find();
+      res.status(200).json(dbWorkouts);
+    } catch (err) {
+      res.status(500).json({ message: err.message });
+    }
+  })
+  .post(async (req, res) => {
+    try {
+      const newWorkout = await db.Workout.create(req.body);
+      res.status(201).json(newWorkout);
+    } catch (err) {
+      res.status(400).json(err);
+    }
+  });
+
+router.get("/workouts/last", async (req, res) => {
+    try {
+      const lastWorkout = (await db.Workout.find().sort([ ['day', -1] ])) [0];
+      res.status(200).json(lastWorkout)
+    } catch (error) {
+      console.log(error);
+    }
+  })
+
+router.put("/workouts/:id", async (req, res) => {
+  const updateWorkout = await db.Workout.findByIdAndUpdate(
+    req.params.id,
+    { $push: { exercises: req.body } },
+    { new: true }
+    );
+    res.status(200).json(updateWorkout);
 });
 
-router.get("/api/workouts", (req, res) => {
-  db.Workout.find({})
+router.get("/workouts/range", (req, res) => {
+  db.Workout.find()
     .then((workouts) => {
-      res.json(workouts);
+      res.status(200).json(workouts);
     })
     .catch((err) => {
       console.log(err);
+      res.status(500).json(err);
     });
 });
-
-router.put("/api/workouts/:id", async (req, res) => {
-  const dbWorkout = await db.Workout.findOneAndUpdate(
-    { _id: req.params.id },
-    req.body,
-    { new: true }
-  );
-  res.json(dbWorkout);
-});
-
-//*"/api/workouts"
-//*/api/workouts/range
-
-//* exercise/:?
-
-//* exercise
-
-//* stats
 
 module.exports = router;
